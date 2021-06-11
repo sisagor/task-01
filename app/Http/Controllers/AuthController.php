@@ -43,8 +43,8 @@ class AuthController extends Controller
 
             $profile = Profile::create([
                 'name' => $request->get('name'),
-                'phone' =>  $request->get('phone'),
-                'gender' =>  $request->get('gender'),
+                'phone' => $request->get('phone'),
+                'gender' => $request->get('gender'),
                 'dob' => $request->get('dob'),
                 'email' => $request->get('email'),
                 'address' => $request->get('address'),
@@ -57,38 +57,36 @@ class AuthController extends Controller
                 'password' => Hash::make($request->get('password')),
             ]);
 
-        }catch (\Exception $exception){
+        } catch (\Exception $exception) {
 
-            dd($exception);
             DB::rollBack();
             return new ExceptionResource($exception);
         }
 
         DB::commit();
 
-        dd($user);
 
         return new LoginResource($user);
 
     }
 
 
-
-   /**
-    * Login
-    */
+    /**
+     * Login
+     */
     public function login(Request $request)
     {
-        if (!Auth::attempt($request->only('email', 'password'))) {
-            return new LoginFailedResource($request);
+
+        if (Auth::attempt($request->only('email', 'password'))) {
+
+            $user = User::where('email', $request->get('email'))->first();
+            return new LoginResource($user);
         }
 
-        $user = User::where('email', $request['email'])->firstOrFail();
-
-        return new LoginResource($user);
+        return new LoginFailedResource($request);
 
     }
-
 
 
 }
+

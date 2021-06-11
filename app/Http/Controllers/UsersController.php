@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Http\Resources\RoleResource;
 use App\Models\User;
 use App\Models\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Resources\UserResource;
-use App\Http\Resources\RoleResource;
 use App\Http\Resources\UsersResource;
+use App\Http\Resources\UserRoleResource;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Resources\ExceptionResource;
 use App\Http\Resources\RequestErrorResource;
@@ -84,6 +84,16 @@ class UsersController extends Controller
 
     }
 
+
+    /**
+     * user roles
+     *
+     */
+    public function userRoles()
+    {
+        $usersRoles = User::with('role')->whereHas('role')->get();
+        return UserRoleResource::collection($usersRoles);
+    }
 
     /**
      * user role edit
