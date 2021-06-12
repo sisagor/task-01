@@ -22,9 +22,26 @@ class UsersController extends Controller
      * users
      *
     */
-    public function users()
+    public function users(Request $request)
     {
         return UsersResource::collection(Profile::all());
+    }
+
+    /**
+     * users
+     *
+    */
+    public function usersWithDynamicPagination(Request $request)
+    {
+
+       // dd($request->all());
+        $page = $request->has('_page') ? $request->get('_page') : 0;
+        $limit = $request->has('_limit') ? $request->get('_limit') : config('take');
+
+        $count = Profile::all()->count();
+        $users = Profile::skip($page * $limit)->take($limit)->get();
+
+        return UsersResource::collection($users)->response()->header('x-total-count', $count);
     }
 
     /**
