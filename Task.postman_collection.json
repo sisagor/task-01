@@ -1,0 +1,755 @@
+{
+	"id": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+	"name": "Task",
+	"description": "InterviewTask",
+	"order": [],
+	"folders": [
+		{
+			"name": "Roles",
+			"description": "",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"order": [
+				"001cc2b9-273b-b032-a069-32eb7263c3e4",
+				"066f64dc-0c1e-a824-a142-4b8c1338ae27",
+				"85f14143-73fe-f925-f013-d2c48670b3f9",
+				"ef756b2d-457b-8d00-5c27-f807fd06da04"
+			],
+			"owner": "1519464",
+			"folders_order": [],
+			"id": "68dbe35e-c323-83ea-be31-939ab4471e4c"
+		},
+		{
+			"name": "role-manament",
+			"description": "",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"order": [
+				"6d9a9732-0363-434c-c1d3-54001e763991",
+				"af087248-631a-5b0f-7d7a-6b46db6b73fb",
+				"9f8a6f3d-cbe9-4598-3d7d-c886cfaf9536"
+			],
+			"owner": "1519464",
+			"folders_order": [],
+			"id": "cf8e1e35-d038-8579-386a-90f99faf3ce9"
+		},
+		{
+			"name": "users",
+			"description": "",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"order": [
+				"e8693a99-4587-83e2-4a1d-577f975b5c9d",
+				"1eceb573-4027-3bda-a28a-53297e3d1819",
+				"d9f9a6bc-0dda-9878-f8b4-db92829c296c",
+				"c063b305-8992-b534-da58-cc7775c77b53",
+				"3c75a9b6-dfad-f6fe-65bf-ee26e6a2a1f3"
+			],
+			"owner": "1519464",
+			"folders_order": [],
+			"id": "2b0357d9-9256-23bd-702d-170b3876f8dd"
+		}
+	],
+	"folders_order": [
+		"2b0357d9-9256-23bd-702d-170b3876f8dd",
+		"68dbe35e-c323-83ea-be31-939ab4471e4c",
+		"cf8e1e35-d038-8579-386a-90f99faf3ce9"
+	],
+	"timestamp": 1622564599903,
+	"owner": "1519464",
+	"public": false,
+	"requests": [
+		{
+			"id": "001cc2b9-273b-b032-a069-32eb7263c3e4",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/role/store",
+			"folder": "68dbe35e-c323-83ea-be31-939ab4471e4c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "sagor",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Something ",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "level",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622644236864,
+			"name": "Create Role",
+			"description": "Creating Role ",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		},
+		{
+			"id": "066f64dc-0c1e-a824-a142-4b8c1338ae27",
+			"headers": "Authorization: Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/roles",
+			"folder": "68dbe35e-c323-83ea-be31-939ab4471e4c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "token_type",
+					"value": "Bearer",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "access_token",
+					"value": "7|n4eSkbIq8gvEymbQeXQjpeRu8021wGzZ5cojFN0F",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622644294574,
+			"name": "Roles",
+			"description": "role list",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		},
+		{
+			"id": "1eceb573-4027-3bda-a28a-53297e3d1819",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/register",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"data": [
+				{
+					"key": "name",
+					"value": "sagor",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "2345325235",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "Male",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "dob",
+					"value": "2010/10/10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "sag32335o2r@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password_confirmation",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Registration",
+			"description": "Registration APi",
+			"descriptionFormat": "html",
+			"time": 1622569879313,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "1eceb573-4027-3bda-a28a-53297e3d1819",
+			"folder": "2b0357d9-9256-23bd-702d-170b3876f8dd"
+		},
+		{
+			"id": "3c75a9b6-dfad-f6fe-65bf-ee26e6a2a1f3",
+			"headers": "Authorization: Bearer 2|6Wj0NjK67FOPM1ARr7PGHJ5ZM6Sk8TgqIvOKBDBi\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 2|6Wj0NjK67FOPM1ARr7PGHJ5ZM6Sk8TgqIvOKBDBi",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/profile",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"data": [
+				{
+					"key": "token_type",
+					"value": "Bearer",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "access_token",
+					"value": "7|n4eSkbIq8gvEymbQeXQjpeRu8021wGzZ5cojFN0F",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "users",
+			"description": "users list",
+			"descriptionFormat": "html",
+			"time": 1622611379645,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2b0357d9-9256-23bd-702d-170b3876f8dd"
+		},
+		{
+			"id": "6d9a9732-0363-434c-c1d3-54001e763991",
+			"headers": "Authorization: Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/role/1",
+			"folder": "cf8e1e35-d038-8579-386a-90f99faf3ce9",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "token_type",
+					"value": "Bearer",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "access_token",
+					"value": "7|n4eSkbIq8gvEymbQeXQjpeRu8021wGzZ5cojFN0F",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622644607687,
+			"name": "Role",
+			"description": "single user role",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		},
+		{
+			"id": "85f14143-73fe-f925-f013-d2c48670b3f9",
+			"headers": "Authorization: Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/role/edit/1",
+			"folder": "68dbe35e-c323-83ea-be31-939ab4471e4c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "token_type",
+					"value": "Bearer",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "access_token",
+					"value": "7|n4eSkbIq8gvEymbQeXQjpeRu8021wGzZ5cojFN0F",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622644338241,
+			"name": "Edit Role",
+			"description": "Edit Role",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		},
+		{
+			"id": "9f8a6f3d-cbe9-4598-3d7d-c886cfaf9536",
+			"headers": "Authorization: Bearer 3|BNNKUa1QMfW8UE07fCqgNbZXZoIYBESKJqzdP4Vv\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 3|BNNKUa1QMfW8UE07fCqgNbZXZoIYBESKJqzdP4Vv",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/role/delete/1",
+			"folder": "cf8e1e35-d038-8579-386a-90f99faf3ce9",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "user_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622637699951,
+			"name": "Delete role from user",
+			"description": "Delete role from user",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		},
+		{
+			"id": "af087248-631a-5b0f-7d7a-6b46db6b73fb",
+			"headers": "Authorization: Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/role/assign",
+			"folder": "cf8e1e35-d038-8579-386a-90f99faf3ce9",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "user_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622644628044,
+			"name": "Role Assign ",
+			"description": "role assign single user",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		},
+		{
+			"id": "c063b305-8992-b534-da58-cc7775c77b53",
+			"headers": "Authorization: Bearer 2|6Wj0NjK67FOPM1ARr7PGHJ5ZM6Sk8TgqIvOKBDBi\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 2|6Wj0NjK67FOPM1ARr7PGHJ5ZM6Sk8TgqIvOKBDBi",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/profile",
+			"folder": "2b0357d9-9256-23bd-702d-170b3876f8dd",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "token_type",
+					"value": "Bearer",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "access_token",
+					"value": "7|n4eSkbIq8gvEymbQeXQjpeRu8021wGzZ5cojFN0F",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622617245726,
+			"name": "Profile",
+			"description": "For user profile",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		},
+		{
+			"id": "d9f9a6bc-0dda-9878-f8b4-db92829c296c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"data": [
+				{
+					"key": "email",
+					"value": "has2an@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622570635920,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "d9f9a6bc-0dda-9878-f8b4-db92829c296c",
+			"folder": "2b0357d9-9256-23bd-702d-170b3876f8dd"
+		},
+		{
+			"id": "e8693a99-4587-83e2-4a1d-577f975b5c9d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Bearer 3|BNNKUa1QMfW8UE07fCqgNbZXZoIYBESKJqzdP4Vv\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 3|BNNKUa1QMfW8UE07fCqgNbZXZoIYBESKJqzdP4Vv",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/profile/update",
+			"folder": "2b0357d9-9256-23bd-702d-170b3876f8dd",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "sagor",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "2345325235",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "Male",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "dob",
+					"value": "2010/10/10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "has32an@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password_confirmation",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "address",
+					"value": "Dhaka, dhanmondi",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622617253844,
+			"name": "ProfileUpdate",
+			"description": "user profile upddate",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		},
+		{
+			"id": "ef756b2d-457b-8d00-5c27-f807fd06da04",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 2|Wo2Yw9jkbkFfGHfdjtkKHZIGw2xjvQqDxJzwdb0a",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/role/update/3",
+			"folder": "68dbe35e-c323-83ea-be31-939ab4471e4c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "This is Upgrade role role",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "level",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622644393736,
+			"name": "Update Role",
+			"description": "Update Role ",
+			"collectionId": "4a026ce6-0015-02ef-288e-34096ced8b1d",
+			"responses": []
+		}
+	]
+}
